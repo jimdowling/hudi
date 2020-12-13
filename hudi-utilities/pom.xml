@@ -133,7 +133,16 @@
       </exclusions>
     </dependency>
     <dependency>
+<<<<<<< HEAD
       <groupId>io.hops.hudi</groupId>
+=======
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+>>>>>>> 11bc1fe6f498850d2c496151741813001d3850a3
       <artifactId>hudi-spark_${scala.binary.version}</artifactId>
       <version>${project.version}</version>
       <exclusions>
@@ -142,6 +151,16 @@
           <artifactId>servlet-api</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark2_${scala.binary.version}</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark3_2.12</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <!-- Kafka -->

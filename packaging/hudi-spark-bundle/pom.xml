@@ -63,6 +63,7 @@
               </transformers>
               <artifactSet>
                 <includes>
+<<<<<<< HEAD
                   <include>io.hops.hudi:hudi-common</include>
                   <include>io.hops.hudi:hudi-client-common</include>
                   <include>io.hops.hudi:hudi-spark-client</include>
@@ -71,6 +72,19 @@
                   <include>io.hops.hudi:hudi-sync-common</include>
                   <include>io.hops.hudi:hudi-hadoop-mr</include>
                   <include>io.hops.hudi:hudi-timeline-service</include>
+=======
+                  <include>org.apache.hudi:hudi-common</include>
+                  <include>org.apache.hudi:hudi-client-common</include>
+                  <include>org.apache.hudi:hudi-spark-client</include>
+                  <include>org.apache.hudi:hudi-spark-common</include>
+                  <include>org.apache.hudi:hudi-spark_${scala.binary.version}</include>
+                  <include>org.apache.hudi:hudi-spark2_${scala.binary.version}</include>
+                  <include>org.apache.hudi:hudi-spark3_2.12</include>
+                  <include>org.apache.hudi:hudi-hive-sync</include>
+                  <include>org.apache.hudi:hudi-sync-common</include>
+                  <include>org.apache.hudi:hudi-hadoop-mr</include>
+                  <include>org.apache.hudi:hudi-timeline-service</include>
+>>>>>>> 11bc1fe6f498850d2c496151741813001d3850a3
 
                   <include>com.beust:jcommander</include>
                   <include>io.javalin:javalin</include>
@@ -226,12 +240,35 @@
       </exclusions>
     </dependency>
     <dependency>
+<<<<<<< HEAD
       <groupId>io.hops.hudi</groupId>
+=======
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+>>>>>>> 11bc1fe6f498850d2c496151741813001d3850a3
       <artifactId>hudi-spark_${scala.binary.version}</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
+<<<<<<< HEAD
       <groupId>io.hops.hudi</groupId>
+=======
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark2_${scala.binary.version}</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark3_2.12</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+>>>>>>> 11bc1fe6f498850d2c496151741813001d3850a3
       <artifactId>hudi-timeline-service</artifactId>
       <version>${project.version}</version>
     </dependency>

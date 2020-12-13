@@ -68,6 +68,7 @@
                   <include>commons-lang:commons-lang</include>
                   <include>commons-pool:commons-pool</include>
 
+<<<<<<< HEAD
                   <include>io.hops.hudi:hudi-common</include>
                   <include>io.hops.hudi:hudi-client-common</include>
                   <include>io.hops.hudi:hudi-spark-client</include>
@@ -78,6 +79,20 @@
                   <include>io.hops.hudi:hudi-hadoop-mr</include>
                   <include>io.hops.hudi:hudi-timeline-service</include>
                   <include>io.hops.hudi:hudi-integ-test</include>
+=======
+                  <include>org.apache.hudi:hudi-common</include>
+                  <include>org.apache.hudi:hudi-client-common</include>
+                  <include>org.apache.hudi:hudi-spark-client</include>
+                  <include>org.apache.hudi:hudi-utilities_${scala.binary.version}</include>
+                  <include>org.apache.hudi:hudi-spark_${scala.binary.version}</include>
+                  <include>org.apache.hudi:hudi-spark2_${scala.binary.version}</include>
+                  <include>org.apache.hudi:hudi-spark3_2.12</include>
+                  <include>org.apache.hudi:hudi-hive-sync</include>
+                  <include>org.apache.hudi:hudi-sync-common</include>
+                  <include>org.apache.hudi:hudi-hadoop-mr</include>
+                  <include>org.apache.hudi:hudi-timeline-service</include>
+                  <include>org.apache.hudi:hudi-integ-test</include>
+>>>>>>> 11bc1fe6f498850d2c496151741813001d3850a3
 
                   <include>org.jetbrains.kotlin:kotlin-stdlib-jdk8</include>
                   <include>org.jetbrains.kotlin:kotlin-stdlib</include>
@@ -344,7 +359,23 @@
     </dependency>
 
     <dependency>
+<<<<<<< HEAD
       <groupId>${hadoop.groupid}</groupId>
+=======
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark2_${scala.binary.version}</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.hudi</groupId>
+      <artifactId>hudi-spark3_2.12</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+>>>>>>> 11bc1fe6f498850d2c496151741813001d3850a3
       <artifactId>hadoop-hdfs</artifactId>
       <classifier>tests</classifier>
     </dependency>
